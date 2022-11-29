@@ -1,0 +1,17 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+BMC_API_Assignment - All Test Cases,,,,2022-11-30 01:22:43,2022-11-30 01:22:48,5.345s,FAILED
+,,,,,,,
+Test Cases/1. GET Bookings,,,,2022-11-30 01:22:43,2022-11-30 01:22:44,1.380s,FAILED
+"response = sendRequest(findTestObject(""GET Bookings""))",,,,2022-11-30 01:22:44,2022-11-30 01:22:44,0.556s,FAILED
+,,,,,,,
+Test Cases/2. GET Booking By Id,,,,2022-11-30 01:22:45,2022-11-30 01:22:45,0.988s,FAILED
+"response = sendRequest(findTestObject(""GET Booking By Id""))",,,,2022-11-30 01:22:45,2022-11-30 01:22:45,0.261s,FAILED
+,,,,,,,
+Test Cases/3. CREATE Booking,,,,2022-11-30 01:22:46,2022-11-30 01:22:46,0.781s,FAILED
+"response = sendRequest(findTestObject(""CREATE Booking""))",,,,2022-11-30 01:22:46,2022-11-30 01:22:46,0.155s,FAILED
+,,,,,,,
+Test Cases/4. UPDATE Booking,,,,2022-11-30 01:22:46,2022-11-30 01:22:47,0.835s,FAILED
+"response = sendRequest(findTestObject(""UPDATE Booking""))",,,,2022-11-30 01:22:47,2022-11-30 01:22:47,0.257s,FAILED
+,,,,,,,
+Test Cases/5. DELETE Booking,,,,2022-11-30 01:22:47,2022-11-30 01:22:48,0.742s,FAILED
+"response = sendRequest(findTestObject(""CREATE Booking""))",,,,2022-11-30 01:22:48,2022-11-30 01:22:48,0.141s,FAILED

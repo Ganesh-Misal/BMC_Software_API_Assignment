@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="BMC_API_Assignment - All Test Cases" time="0.687" tests="5" failures="0" errors="5">
+   <testsuite name="BMC_API_Assignment - All Test Cases" tests="5" failures="0" errors="5" time="0.687" skipped="0" timestamp="2022-11-30 01:12:54" hostname="Ganesh - DESKTOP-24A4UP9" id="Test Suites/BMC_API_Assignment - All Test Cases">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Ganesh\\Katalon Studio\\BMC_Software_API Assignment\\Reports\\20221130_011248\\BMC_API_Assignment - All Test Cases\\20221130_011248"/>
+         <property name="logFiles" value="C:\\Users\\Ganesh\\Katalon Studio\\BMC_Software_API Assignment\\Reports\\20221130_011248\\BMC_API_Assignment - All Test Cases\\20221130_011248\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Ganesh - DESKTOP-24A4UP9"/>
+         <property name="hostAddress" value="192.168.1.11"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.5.1.208"/>
+      </properties>
+      <testcase name="Test Cases/1. GET Bookings" time="0.042" classname="Test Cases/1. GET Bookings" status="ERROR">
+         <error type="ERROR" message="Test Cases/1. GET Bookings has ERROR(s).
+Reason:
+java.io.FileNotFoundException: File '' does not exist"/>
+         <system-out><![CDATA[2022-11-30 01:12:55 - [TEST_CASE][ERROR] - Test Cases/1. GET Bookings: Test Cases/1. GET Bookings has ERROR(s).
+Reason:
+java.io.FileNotFoundException: File '' does not exist]]></system-out>
+         <system-err><![CDATA[2022-11-30 01:12:55 - [TEST_CASE][ERROR] - Test Cases/1. GET Bookings: Test Cases/1. GET Bookings has ERROR(s).
+Reason:
+java.io.FileNotFoundException: File '' does not exist]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/2. GET Booking By Id" time="0.004" classname="Test Cases/2. GET Booking By Id" status="ERROR">
+         <error type="ERROR" message="Test Cases/2. GET Booking By Id has ERROR(s).
+Reason:
+java.io.FileNotFoundException: File '' does not exist"/>
+         <system-out><![CDATA[2022-11-30 01:12:55 - [TEST_CASE][ERROR] - Test Cases/2. GET Booking By Id: Test Cases/2. GET Booking By Id has ERROR(s).
+Reason:
+java.io.FileNotFoundException: File '' does not exist]]></system-out>
+         <system-err><![CDATA[2022-11-30 01:12:55 - [TEST_CASE][ERROR] - Test Cases/2. GET Booking By Id: Test Cases/2. GET Booking By Id has ERROR(s).
+Reason:
+java.io.FileNotFoundException: File '' does not exist]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/3. CREATE Booking" time="0.0" classname="Test Cases/3. CREATE Booking" status="ERROR">
+         <error type="ERROR" message="Test Cases/3. CREATE Booking has ERROR(s).
+Reason:
+java.io.FileNotFoundException: File '' does not exist"/>
+         <system-out><![CDATA[2022-11-30 01:12:55 - [TEST_CASE][ERROR] - Test Cases/3. CREATE Booking: Test Cases/3. CREATE Booking has ERROR(s).
+Reason:
+java.io.FileNotFoundException: File '' does not exist]]></system-out>
+         <system-err><![CDATA[2022-11-30 01:12:55 - [TEST_CASE][ERROR] - Test Cases/3. CREATE Booking: Test Cases/3. CREATE Booking has ERROR(s).
+Reason:
+java.io.FileNotFoundException: File '' does not exist]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/4. UPDATE Booking" time="0.0" classname="Test Cases/4. UPDATE Booking" status="ERROR">
+         <error type="ERROR" message="Test Cases/4. UPDATE Booking has ERROR(s).
+Reason:
+java.io.FileNotFoundException: File '' does not exist"/>
+         <system-out><![CDATA[2022-11-30 01:12:55 - [TEST_CASE][ERROR] - Test Cases/4. UPDATE Booking: Test Cases/4. UPDATE Booking has ERROR(s).
+Reason:
+java.io.FileNotFoundException: File '' does not exist]]></system-out>
+         <system-err><![CDATA[2022-11-30 01:12:55 - [TEST_CASE][ERROR] - Test Cases/4. UPDATE Booking: Test Cases/4. UPDATE Booking has ERROR(s).
+Reason:
+java.io.FileNotFoundException: File '' does not exist]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. DELETE Booking" time="0.0" classname="Test Cases/5. DELETE Booking" status="ERROR">
+         <error type="ERROR" message="Test Cases/5. DELETE Booking has ERROR(s).
+Reason:
+java.io.FileNotFoundException: File '' does not exist"/>
+         <system-out><![CDATA[2022-11-30 01:12:55 - [TEST_CASE][ERROR] - Test Cases/5. DELETE Booking: Test Cases/5. DELETE Booking has ERROR(s).
+Reason:
+java.io.FileNotFoundException: File '' does not exist]]></system-out>
+         <system-err><![CDATA[2022-11-30 01:12:55 - [TEST_CASE][ERROR] - Test Cases/5. DELETE Booking: Test Cases/5. DELETE Booking has ERROR(s).
+Reason:
+java.io.FileNotFoundException: File '' does not exist]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-11-30 01:12:54 - [TEST_SUITE][ERROR] - BMC_API_Assignment - All Test Cases: Test Cases/1. GET Bookings has ERROR(s).
+Reason:
+java.io.FileNotFoundException: File '' does not exist]]></system-out>
+      <system-err><![CDATA[2022-11-30 01:12:54 - [TEST_SUITE][ERROR] - BMC_API_Assignment - All Test Cases: Test Cases/1. GET Bookings has ERROR(s).
+Reason:
+java.io.FileNotFoundException: File '' does not exist]]></system-err>
+   </testsuite>
+</testsuites>

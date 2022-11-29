@@ -1,0 +1,12 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+BMC_API_Assignment - All Test Cases,,,,2022-11-30 01:12:54,2022-11-30 01:12:55,0.687s,ERROR
+,,,,,,,
+Test Cases/1. GET Bookings,,,,2022-11-30 01:12:55,2022-11-30 01:12:55,0.042s,ERROR
+,,,,,,,
+Test Cases/2. GET Booking By Id,,,,2022-11-30 01:12:55,2022-11-30 01:12:55,0.004s,ERROR
+,,,,,,,
+Test Cases/3. CREATE Booking,,,,2022-11-30 01:12:55,2022-11-30 01:12:55,0.000s,ERROR
+,,,,,,,
+Test Cases/4. UPDATE Booking,,,,2022-11-30 01:12:55,2022-11-30 01:12:55,0.000s,ERROR
+,,,,,,,
+Test Cases/5. DELETE Booking,,,,2022-11-30 01:12:55,2022-11-30 01:12:55,0.000s,ERROR
