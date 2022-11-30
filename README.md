@@ -1,5 +1,3 @@
-#BMC_Software_API_Assignment
-
 BMC_Software_API_Assignment
 
 Tool Used - Katalon Studio
