@@ -33,7 +33,7 @@
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>GlobalVariable.bookingIdDelete</defaultValue>
+      <defaultValue>GlobalVariable.bookingId</defaultValue>
       <description></description>
       <id>43ee5d16-5b6b-4c7d-8bbf-2659c00bf533</id>
       <masked>false</masked>

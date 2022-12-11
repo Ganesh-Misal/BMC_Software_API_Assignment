@@ -1,0 +1,55 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+BMC_API_Assignment - All Test Cases,,,,2022-12-11 00:28:48,2022-12-11 00:29:06,18.586s,PASSED
+,,,,,,,
+Test Cases/1. GET Bookings,,,,2022-12-11 00:28:48,2022-12-11 00:28:53,5.093s,PASSED
+"response = sendRequest(findTestObject(""GET Bookings""))",,,,2022-12-11 00:28:48,2022-12-11 00:28:53,4.649s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-12-11 00:28:53,2022-12-11 00:28:53,0.001s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,,2022-12-11 00:28:53,2022-12-11 00:28:53,0.040s,PASSED
+bookingId = bookingId,,,,2022-12-11 00:28:53,2022-12-11 00:28:53,0.011s,PASSED
+"verifyResponseStatusCode(response, successCode)",,,,2022-12-11 00:28:53,2022-12-11 00:28:53,0.015s,PASSED
+,,,,,,,
+Test Cases/2. GET Booking By Id,,,,2022-12-11 00:28:53,2022-12-11 00:28:57,3.962s,PASSED
+"response = sendRequest(findTestObject(""GET Bookings""))",,,,2022-12-11 00:28:53,2022-12-11 00:28:56,2.526s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-12-11 00:28:56,2022-12-11 00:28:56,0.000s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,,2022-12-11 00:28:56,2022-12-11 00:28:56,0.016s,PASSED
+bookingId = bookingid,,,,2022-12-11 00:28:56,2022-12-11 00:28:56,0.001s,PASSED
+"verifyResponseStatusCode(response, successCode)",,,,2022-12-11 00:28:56,2022-12-11 00:28:56,0.000s,PASSED
+"response1 = sendRequest(findTestObject(""GET Booking By Id""))",,,,2022-12-11 00:28:56,2022-12-11 00:28:57,1.139s,PASSED
+"verifyResponseStatusCode(response1, successCode)",,,,2022-12-11 00:28:57,2022-12-11 00:28:57,0.000s,PASSED
+,,,,,,,
+Test Cases/3. CREATE Booking,,,,2022-12-11 00:28:57,2022-12-11 00:29:00,2.662s,PASSED
+rnd = new java.util.Random(),,,,2022-12-11 00:28:57,2022-12-11 00:28:57,0.002s,PASSED
+"response = sendRequest(findTestObject(""CREATE Booking"", [""randomNumber"":rnd.nextInt()]))",,,,2022-12-11 00:28:57,2022-12-11 00:28:58,1.149s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-12-11 00:28:58,2022-12-11 00:28:58,0.000s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,,2022-12-11 00:28:58,2022-12-11 00:28:58,0.000s,PASSED
+bookingId = bookingid,,,,2022-12-11 00:28:58,2022-12-11 00:28:58,0.000s,PASSED
+firstName = firstname,,,,2022-12-11 00:28:58,2022-12-11 00:28:58,0.000s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2022-12-11 00:28:58,2022-12-11 00:28:58,0.015s,PASSED
+"response1 = sendRequest(findTestObject(""GET Booking By Id""))",,,,2022-12-11 00:28:58,2022-12-11 00:29:00,1.203s,PASSED
+result1 = slurper.parseText(response1.getResponseBodyContent()),,,,2022-12-11 00:29:00,2022-12-11 00:29:00,0.000s,PASSED
+firstNameExpected = firstname,,,,2022-12-11 00:29:00,2022-12-11 00:29:00,0.000s,PASSED
+"verifyResponseStatusCode(response1, successCode)",,,,2022-12-11 00:29:00,2022-12-11 00:29:00,0.000s,PASSED
+"verifyEqual(firstNameExpected, firstName)",,,,2022-12-11 00:29:00,2022-12-11 00:29:00,0.027s,PASSED
+,,,,,,,
+Test Cases/4. UPDATE Booking,,,,2022-12-11 00:29:00,2022-12-11 00:29:02,2.730s,PASSED
+rnd = new java.util.Random(),,,,2022-12-11 00:29:00,2022-12-11 00:29:00,0.001s,PASSED
+"response = sendRequest(findTestObject(""UPDATE Booking"", [""randomNumber"":rnd.nextInt()]))",,,,2022-12-11 00:29:00,2022-12-11 00:29:01,1.248s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-12-11 00:29:01,2022-12-11 00:29:01,0.000s,PASSED
+result = slurper.parseText(response.getResponseBodyContent()),,,,2022-12-11 00:29:01,2022-12-11 00:29:01,0.000s,PASSED
+firstNameUpdated = firstname,,,,2022-12-11 00:29:01,2022-12-11 00:29:01,0.000s,PASSED
+"verifyResponseStatusCode(response, successCode)",,,,2022-12-11 00:29:01,2022-12-11 00:29:01,0.000s,PASSED
+"response1 = sendRequest(findTestObject(""GET Booking By Id""))",,,,2022-12-11 00:29:01,2022-12-11 00:29:02,1.171s,PASSED
+result1 = slurper.parseText(response1.getResponseBodyContent()),,,,2022-12-11 00:29:02,2022-12-11 00:29:02,0.000s,PASSED
+firstName = firstname,,,,2022-12-11 00:29:02,2022-12-11 00:29:02,0.000s,PASSED
+"verifyResponseStatusCode(response1, successCode)",,,,2022-12-11 00:29:02,2022-12-11 00:29:02,0.000s,PASSED
+"verifyEqual(firstNameUpdated, firstName)",,,,2022-12-11 00:29:02,2022-12-11 00:29:02,0.015s,PASSED
+,,,,,,,
+Test Cases/5. DELETE Booking,,,,2022-12-11 00:29:02,2022-12-11 00:29:06,3.831s,PASSED
+"response = sendRequest(findTestObject(""CREATE Booking""))",,,,2022-12-11 00:29:03,2022-12-11 00:29:04,1.146s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-12-11 00:29:04,2022-12-11 00:29:04,0.000s,PASSED
+result = slurper.parseText(response.getResponseText()),,,,2022-12-11 00:29:04,2022-12-11 00:29:04,0.000s,PASSED
+"verifyResponseStatusCode(response, successCode)",,,,2022-12-11 00:29:04,2022-12-11 00:29:04,0.000s,PASSED
+"response1 = sendRequest(findTestObject(""DELETE Booking""))",,,,2022-12-11 00:29:04,2022-12-11 00:29:05,1.187s,PASSED
+"verifyResponseStatusCode(response1, 201)",,,,2022-12-11 00:29:05,2022-12-11 00:29:05,0.000s,PASSED
+"response2 = sendRequest(findTestObject(""GET Booking By Id""))",,,,2022-12-11 00:29:05,2022-12-11 00:29:06,1.164s,PASSED
+"verifyResponseStatusCode(response2, 404)",,,,2022-12-11 00:29:06,2022-12-11 00:29:06,0.000s,PASSED

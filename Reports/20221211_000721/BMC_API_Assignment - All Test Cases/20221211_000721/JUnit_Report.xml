@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="BMC_API_Assignment - All Test Cases" time="11.984" tests="3" failures="1" errors="0">
+   <testsuite name="BMC_API_Assignment - All Test Cases" tests="3" failures="1" errors="0" time="11.984" skipped="0" timestamp="2022-12-11 00:07:24" hostname="Ganesh - DESKTOP-24A4UP9" id="Test Suites/BMC_API_Assignment - All Test Cases">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Ganesh\\Katalon Studio\\BMC_Software_API Assignment\\Reports\\20221211_000721\\BMC_API_Assignment - All Test Cases\\20221211_000721"/>
+         <property name="logFiles" value="C:\\Users\\Ganesh\\Katalon Studio\\BMC_Software_API Assignment\\Reports\\20221211_000721\\BMC_API_Assignment - All Test Cases\\20221211_000721\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Ganesh - DESKTOP-24A4UP9"/>
+         <property name="hostAddress" value="192.168.1.11"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.5.1.208"/>
+      </properties>
+      <testcase name="Test Cases/3. CREATE Booking" time="4.943" classname="Test Cases/3. CREATE Booking" status="PASSED">
+         <system-out><![CDATA[2022-12-11 00:07:24 - [TEST_CASE][PASSED] - Test Cases/3. CREATE Booking: Test Cases/3. CREATE Booking
+
+2022-12-11 00:07:24 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("CREATE Booking")): Send request successfully
+
+2022-12-11 00:07:28 - [MESSAGE][INFO] - HAR: C:\Users\Ganesh\Katalon Studio\BMC_Software_API Assignment\Reports\20221211_000721\BMC_API_Assignment - All Test Cases\20221211_000721\requests\main\0.har
+
+2022-12-11 00:07:28 - [MESSAGE][PASSED] - Send request successfully
+
+2022-12-11 00:07:28 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-12-11 00:07:28 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2022-12-11 00:07:28 - [TEST_STEP][PASSED] - bookingId = bookingid: null
+
+2022-12-11 00:07:28 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2022-12-11 00:07:28 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-12-11 00:07:28 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("GET Booking By Id")): Send request successfully
+
+2022-12-11 00:07:29 - [MESSAGE][INFO] - HAR: C:\Users\Ganesh\Katalon Studio\BMC_Software_API Assignment\Reports\20221211_000721\BMC_API_Assignment - All Test Cases\20221211_000721\requests\main\1.har
+
+2022-12-11 00:07:29 - [MESSAGE][PASSED] - Send request successfully
+
+2022-12-11 00:07:29 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response1, successCode): Verify response status code successfully
+
+2022-12-11 00:07:29 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/4. UPDATE Booking" time="2.768" classname="Test Cases/4. UPDATE Booking" status="FAILED">
+         <failure type="FAILED" message="Test Cases/4. UPDATE Booking FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Actual object 'Auto_1442379005' and expected object 'Jim' are not equal
+	at com.kms.katalon.core.keyword.builtin.VerifyEqualKeyword$_verifyEqual_closure1.doCall(VerifyEqualKeyword.groovy:58)
+	at com.kms.katalon.core.keyword.builtin.VerifyEqualKeyword$_verifyEqual_closure1.call(VerifyEqualKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.keyword.builtin.VerifyEqualKeyword.verifyEqual(VerifyEqualKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.VerifyEqualKeyword.execute(VerifyEqualKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.verifyEqual(BuiltinKeywords.groovy:141)
+	at 4. UPDATE Booking.run(4. UPDATE Booking:40)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1670697441670.run(TempTestSuite1670697441670.groovy:36)
+"/>
+         <system-out><![CDATA[2022-12-11 00:07:29 - [TEST_CASE][FAILED] - Test Cases/4. UPDATE Booking: Test Cases/4. UPDATE Booking FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Actual object 'Auto_1442379005' and expected object 'Jim' are not equal
+	at com.kms.katalon.core.keyword.builtin.VerifyEqualKeyword$_verifyEqual_closure1.doCall(VerifyEqualKeyword.groovy:58)
+	at com.kms.katalon.core.keyword.builtin.VerifyEqualKeyword$_verifyEqual_closure1.call(VerifyEqualKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.keyword.builtin.VerifyEqualKeyword.verifyEqual(VerifyEqualKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.VerifyEqualKeyword.execute(VerifyEqualKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.verifyEqual(BuiltinKeywords.groovy:141)
+	at 4. UPDATE Booking.run(4. UPDATE Booking:40)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1670697441670.run(TempTestSuite1670697441670.groovy:36)
+
+
+2022-12-11 00:07:29 - [TEST_STEP][PASSED] - rnd = new java.util.Random(): null
+
+2022-12-11 00:07:29 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("UPDATE Booking", ["randomNumber":rnd.nextInt()])): Send request successfully
+
+2022-12-11 00:07:31 - [MESSAGE][INFO] - HAR: C:\Users\Ganesh\Katalon Studio\BMC_Software_API Assignment\Reports\20221211_000721\BMC_API_Assignment - All Test Cases\20221211_000721\requests\main\2.har
+
+2022-12-11 00:07:31 - [MESSAGE][PASSED] - Send request successfully
+
+2022-12-11 00:07:31 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-12-11 00:07:31 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2022-12-11 00:07:31 - [TEST_STEP][PASSED] - firstNameUpdated = firstname: null
+
+2022-12-11 00:07:31 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, successCode): Verify response status code successfully
+
+2022-12-11 00:07:31 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-12-11 00:07:31 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("GET Booking By Id")): Send request successfully
+
+2022-12-11 00:07:32 - [MESSAGE][INFO] - HAR: C:\Users\Ganesh\Katalon Studio\BMC_Software_API Assignment\Reports\20221211_000721\BMC_API_Assignment - All Test Cases\20221211_000721\requests\main\3.har
+
+2022-12-11 00:07:32 - [MESSAGE][PASSED] - Send request successfully
+
+2022-12-11 00:07:32 - [TEST_STEP][PASSED] - result1 = slurper.parseText(response1.getResponseBodyContent()): null
+
+2022-12-11 00:07:32 - [TEST_STEP][PASSED] - firstName = firstname: null
+
+2022-12-11 00:07:32 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response1, successCode): Verify response status code successfully
+
+2022-12-11 00:07:32 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-12-11 00:07:32 - [TEST_STEP][FAILED] - verifyEqual(firstNameUpdated, firstName): Unable to verify equal between actual object 'Auto_1442379005' and expected object 'Jim' (Root cause: com.kms.katalon.core.exception.StepFailedException: Actual object 'Auto_1442379005' and expected object 'Jim' are not equal
+	at com.kms.katalon.core.keyword.builtin.VerifyEqualKeyword$_verifyEqual_closure1.doCall(VerifyEqualKeyword.groovy:58)
+	at com.kms.katalon.core.keyword.builtin.VerifyEqualKeyword$_verifyEqual_closure1.call(VerifyEqualKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.keyword.builtin.VerifyEqualKeyword.verifyEqual(VerifyEqualKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.VerifyEqualKeyword.execute(VerifyEqualKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.verifyEqual(BuiltinKeywords.groovy:141)
+	at 4. UPDATE Booking.run(4. UPDATE Booking:40)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1670697441670.run(TempTestSuite1670697441670.groovy:36)
+)
+
+2022-12-11 00:07:32 - [MESSAGE][FAILED] - Unable to verify equal between actual object 'Auto_1442379005' and expected object 'Jim' (Root cause: com.kms.katalon.core.exception.StepFailedException: Actual object 'Auto_1442379005' and expected object 'Jim' are not equal
+	at com.kms.katalon.core.keyword.builtin.VerifyEqualKeyword$_verifyEqual_closure1.doCall(VerifyEqualKeyword.groovy:58)
+	at com.kms.katalon.core.keyword.builtin.VerifyEqualKeyword$_verifyEqual_closure1.call(VerifyEqualKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.keyword.builtin.VerifyEqualKeyword.verifyEqual(VerifyEqualKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.VerifyEqualKeyword.execute(VerifyEqualKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.verifyEqual(BuiltinKeywords.groovy:141)
+	at 4. UPDATE Booking.run(4. UPDATE Booking:40)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1670697441670.run(TempTestSuite1670697441670.groovy:36)
+)]]></system-out>
+         <system-err><![CDATA[2022-12-11 00:07:29 - [TEST_CASE][FAILED] - Test Cases/4. UPDATE Booking: Test Cases/4. UPDATE Booking FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Actual object 'Auto_1442379005' and expected object 'Jim' are not equal
+	at com.kms.katalon.core.keyword.builtin.VerifyEqualKeyword$_verifyEqual_closure1.doCall(VerifyEqualKeyword.groovy:58)
+	at com.kms.katalon.core.keyword.builtin.VerifyEqualKeyword$_verifyEqual_closure1.call(VerifyEqualKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.keyword.builtin.VerifyEqualKeyword.verifyEqual(VerifyEqualKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.VerifyEqualKeyword.execute(VerifyEqualKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.verifyEqual(BuiltinKeywords.groovy:141)
+	at 4. UPDATE Booking.run(4. UPDATE Booking:40)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1670697441670.run(TempTestSuite1670697441670.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/2. GET Booking By Id" time="4.008" classname="Test Cases/2. GET Booking By Id" status="PASSED">
+         <system-out><![CDATA[2022-12-11 00:07:32 - [TEST_CASE][PASSED] - Test Cases/2. GET Booking By Id: Test Cases/2. GET Booking By Id
+
+2022-12-11 00:07:32 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("GET Bookings")): Send request successfully
+
+2022-12-11 00:07:35 - [MESSAGE][INFO] - HAR: C:\Users\Ganesh\Katalon Studio\BMC_Software_API Assignment\Reports\20221211_000721\BMC_API_Assignment - All Test Cases\20221211_000721\requests\main\4.har
+
+2022-12-11 00:07:35 - [MESSAGE][PASSED] - Send request successfully
+
+2022-12-11 00:07:35 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-12-11 00:07:35 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2022-12-11 00:07:35 - [TEST_STEP][PASSED] - bookingId = bookingid: null
+
+2022-12-11 00:07:35 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, successCode): Verify response status code successfully
+
+2022-12-11 00:07:35 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-12-11 00:07:35 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("GET Booking By Id")): Send request successfully
+
+2022-12-11 00:07:36 - [MESSAGE][INFO] - HAR: C:\Users\Ganesh\Katalon Studio\BMC_Software_API Assignment\Reports\20221211_000721\BMC_API_Assignment - All Test Cases\20221211_000721\requests\main\5.har
+
+2022-12-11 00:07:36 - [MESSAGE][PASSED] - Send request successfully
+
+2022-12-11 00:07:36 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response1, successCode): Verify response status code successfully
+
+2022-12-11 00:07:36 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-12-11 00:07:24 - [TEST_SUITE][FAILED] - BMC_API_Assignment - All Test Cases: Test Cases/4. UPDATE Booking FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Actual object 'Auto_1442379005' and expected object 'Jim' are not equal
+	at com.kms.katalon.core.keyword.builtin.VerifyEqualKeyword$_verifyEqual_closure1.doCall(VerifyEqualKeyword.groovy:58)
+	at com.kms.katalon.core.keyword.builtin.VerifyEqualKeyword$_verifyEqual_closure1.call(VerifyEqualKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.keyword.builtin.VerifyEqualKeyword.verifyEqual(VerifyEqualKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.VerifyEqualKeyword.execute(VerifyEqualKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.verifyEqual(BuiltinKeywords.groovy:141)
+	at 4. UPDATE Booking.run(4. UPDATE Booking:40)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1670697441670.run(TempTestSuite1670697441670.groovy:36)]]></system-out>
+      <system-err><![CDATA[2022-12-11 00:07:24 - [TEST_SUITE][FAILED] - BMC_API_Assignment - All Test Cases: Test Cases/4. UPDATE Booking FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Actual object 'Auto_1442379005' and expected object 'Jim' are not equal
+	at com.kms.katalon.core.keyword.builtin.VerifyEqualKeyword$_verifyEqual_closure1.doCall(VerifyEqualKeyword.groovy:58)
+	at com.kms.katalon.core.keyword.builtin.VerifyEqualKeyword$_verifyEqual_closure1.call(VerifyEqualKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.keyword.builtin.VerifyEqualKeyword.verifyEqual(VerifyEqualKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.VerifyEqualKeyword.execute(VerifyEqualKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.verifyEqual(BuiltinKeywords.groovy:141)
+	at 4. UPDATE Booking.run(4. UPDATE Booking:40)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:151)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1670697441670.run(TempTestSuite1670697441670.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>

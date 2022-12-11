@@ -17,22 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-response = WS.sendRequest(findTestObject('GET Booking By Id'))
+/*response = WS.sendRequest(findTestObject('GET Booking By Id'))
 
-WS.verifyResponseStatusCode(response, GlobalVariable.successCode)
+WS.verifyResponseStatusCode(response, GlobalVariable.successCode)*/
 
-/*
 response = WS.sendRequest(findTestObject('GET Bookings'))
 
 def slurper = new groovy.json.JsonSlurper()
 
 def result = slurper.parseText(response.getResponseBodyContent())
 
-def bookingId = result[0].bookingid
+GlobalVariable.bookingId = result[0].bookingid
 
 WS.verifyResponseStatusCode(response, GlobalVariable.successCode)
 
-response1 = WS.sendRequest(findTestObject('GET Booking By Id', [('bookingId') : bookingId]))
+response1 = WS.sendRequest(findTestObject('GET Booking By Id'))
 
 WS.verifyResponseStatusCode(response1, GlobalVariable.successCode)
-*/
+

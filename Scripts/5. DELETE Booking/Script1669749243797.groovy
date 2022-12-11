@@ -23,11 +23,13 @@ def slurper = new groovy.json.JsonSlurper()
 
 def result = slurper.parseText(response.getResponseText())
 
-def bookingId = result.bookingid
-
 WS.verifyResponseStatusCode(response, GlobalVariable.successCode)
 
-response1 = WS.sendRequest(findTestObject('DELETE Booking', [('bookingId') : bookingId]))
+response1 = WS.sendRequest(findTestObject('DELETE Booking'))
 
 WS.verifyResponseStatusCode(response1, 201)
+
+response2 = WS.sendRequest(findTestObject('GET Booking By Id'))
+
+WS.verifyResponseStatusCode(response2, 404)
 

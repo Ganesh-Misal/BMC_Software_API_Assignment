@@ -17,6 +17,26 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-response = WS.sendRequest(findTestObject('CREATE Booking'))
+Random rnd = new Random()
+
+response = WS.sendRequest(findTestObject('CREATE Booking', [('randomNumber') : rnd.nextInt()]))
+
+def slurper = new groovy.json.JsonSlurper()
+
+def result = slurper.parseText(response.getResponseBodyContent())
+
+GlobalVariable.bookingId = result.bookingid
+
+def firstName = result.booking.firstname
 
 WS.verifyResponseStatusCode(response, 200)
+
+response1 = WS.sendRequest(findTestObject('GET Booking By Id'))
+
+def result1 = slurper.parseText(response1.getResponseBodyContent())
+
+def firstNameExpected = result1.firstname
+
+WS.verifyResponseStatusCode(response1, GlobalVariable.successCode)
+
+WS.verifyEqual(firstNameExpected, firstName)

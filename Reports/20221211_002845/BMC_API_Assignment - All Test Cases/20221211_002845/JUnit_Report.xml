@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="BMC_API_Assignment - All Test Cases" time="18.586" tests="5" failures="0" errors="0">
+   <testsuite name="BMC_API_Assignment - All Test Cases" tests="5" failures="0" errors="0" time="18.586" skipped="0" timestamp="2022-12-11 00:28:48" hostname="Ganesh - DESKTOP-24A4UP9" id="Test Suites/BMC_API_Assignment - All Test Cases">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Ganesh\\Katalon Studio\\BMC_Software_API Assignment\\Reports\\20221211_002845\\BMC_API_Assignment - All Test Cases\\20221211_002845"/>
+         <property name="logFiles" value="C:\\Users\\Ganesh\\Katalon Studio\\BMC_Software_API Assignment\\Reports\\20221211_002845\\BMC_API_Assignment - All Test Cases\\20221211_002845\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Ganesh - DESKTOP-24A4UP9"/>
+         <property name="hostAddress" value="192.168.1.11"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.5.1.208"/>
+      </properties>
+      <testcase name="Test Cases/1. GET Bookings" time="5.093" classname="Test Cases/1. GET Bookings" status="PASSED">
+         <system-out><![CDATA[2022-12-11 00:28:48 - [TEST_CASE][PASSED] - Test Cases/1. GET Bookings: Test Cases/1. GET Bookings
+
+2022-12-11 00:28:48 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("GET Bookings")): Send request successfully
+
+2022-12-11 00:28:53 - [MESSAGE][INFO] - HAR: C:\Users\Ganesh\Katalon Studio\BMC_Software_API Assignment\Reports\20221211_002845\BMC_API_Assignment - All Test Cases\20221211_002845\requests\main\0.har
+
+2022-12-11 00:28:53 - [MESSAGE][PASSED] - Send request successfully
+
+2022-12-11 00:28:53 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-12-11 00:28:53 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2022-12-11 00:28:53 - [TEST_STEP][PASSED] - bookingId = bookingId: null
+
+2022-12-11 00:28:53 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, successCode): Verify response status code successfully
+
+2022-12-11 00:28:53 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/2. GET Booking By Id" time="3.962" classname="Test Cases/2. GET Booking By Id" status="PASSED">
+         <system-out><![CDATA[2022-12-11 00:28:53 - [TEST_CASE][PASSED] - Test Cases/2. GET Booking By Id: Test Cases/2. GET Booking By Id
+
+2022-12-11 00:28:53 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("GET Bookings")): Send request successfully
+
+2022-12-11 00:28:56 - [MESSAGE][INFO] - HAR: C:\Users\Ganesh\Katalon Studio\BMC_Software_API Assignment\Reports\20221211_002845\BMC_API_Assignment - All Test Cases\20221211_002845\requests\main\1.har
+
+2022-12-11 00:28:56 - [MESSAGE][PASSED] - Send request successfully
+
+2022-12-11 00:28:56 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-12-11 00:28:56 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2022-12-11 00:28:56 - [TEST_STEP][PASSED] - bookingId = bookingid: null
+
+2022-12-11 00:28:56 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, successCode): Verify response status code successfully
+
+2022-12-11 00:28:56 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-12-11 00:28:56 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("GET Booking By Id")): Send request successfully
+
+2022-12-11 00:28:57 - [MESSAGE][INFO] - HAR: C:\Users\Ganesh\Katalon Studio\BMC_Software_API Assignment\Reports\20221211_002845\BMC_API_Assignment - All Test Cases\20221211_002845\requests\main\2.har
+
+2022-12-11 00:28:57 - [MESSAGE][PASSED] - Send request successfully
+
+2022-12-11 00:28:57 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response1, successCode): Verify response status code successfully
+
+2022-12-11 00:28:57 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/3. CREATE Booking" time="2.662" classname="Test Cases/3. CREATE Booking" status="PASSED">
+         <system-out><![CDATA[2022-12-11 00:28:57 - [TEST_CASE][PASSED] - Test Cases/3. CREATE Booking: Test Cases/3. CREATE Booking
+
+2022-12-11 00:28:57 - [TEST_STEP][PASSED] - rnd = new java.util.Random(): null
+
+2022-12-11 00:28:57 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("CREATE Booking", ["randomNumber":rnd.nextInt()])): Send request successfully
+
+2022-12-11 00:28:58 - [MESSAGE][INFO] - HAR: C:\Users\Ganesh\Katalon Studio\BMC_Software_API Assignment\Reports\20221211_002845\BMC_API_Assignment - All Test Cases\20221211_002845\requests\main\3.har
+
+2022-12-11 00:28:58 - [MESSAGE][PASSED] - Send request successfully
+
+2022-12-11 00:28:58 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-12-11 00:28:58 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2022-12-11 00:28:58 - [TEST_STEP][PASSED] - bookingId = bookingid: null
+
+2022-12-11 00:28:58 - [TEST_STEP][PASSED] - firstName = firstname: null
+
+2022-12-11 00:28:58 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2022-12-11 00:28:58 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-12-11 00:28:58 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("GET Booking By Id")): Send request successfully
+
+2022-12-11 00:29:00 - [MESSAGE][INFO] - HAR: C:\Users\Ganesh\Katalon Studio\BMC_Software_API Assignment\Reports\20221211_002845\BMC_API_Assignment - All Test Cases\20221211_002845\requests\main\4.har
+
+2022-12-11 00:29:00 - [MESSAGE][PASSED] - Send request successfully
+
+2022-12-11 00:29:00 - [TEST_STEP][PASSED] - result1 = slurper.parseText(response1.getResponseBodyContent()): null
+
+2022-12-11 00:29:00 - [TEST_STEP][PASSED] - firstNameExpected = firstname: null
+
+2022-12-11 00:29:00 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response1, successCode): Verify response status code successfully
+
+2022-12-11 00:29:00 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-12-11 00:29:00 - [TEST_STEP][PASSED] - verifyEqual(firstNameExpected, firstName): Actual object 'Auto_-1199130551' and expected object 'Auto_-1199130551' are equal
+
+2022-12-11 00:29:00 - [MESSAGE][PASSED] - Actual object 'Auto_-1199130551' and expected object 'Auto_-1199130551' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/4. UPDATE Booking" time="2.73" classname="Test Cases/4. UPDATE Booking" status="PASSED">
+         <system-out><![CDATA[2022-12-11 00:29:00 - [TEST_CASE][PASSED] - Test Cases/4. UPDATE Booking: Test Cases/4. UPDATE Booking
+
+2022-12-11 00:29:00 - [TEST_STEP][PASSED] - rnd = new java.util.Random(): null
+
+2022-12-11 00:29:00 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("UPDATE Booking", ["randomNumber":rnd.nextInt()])): Send request successfully
+
+2022-12-11 00:29:01 - [MESSAGE][INFO] - HAR: C:\Users\Ganesh\Katalon Studio\BMC_Software_API Assignment\Reports\20221211_002845\BMC_API_Assignment - All Test Cases\20221211_002845\requests\main\5.har
+
+2022-12-11 00:29:01 - [MESSAGE][PASSED] - Send request successfully
+
+2022-12-11 00:29:01 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-12-11 00:29:01 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseBodyContent()): null
+
+2022-12-11 00:29:01 - [TEST_STEP][PASSED] - firstNameUpdated = firstname: null
+
+2022-12-11 00:29:01 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, successCode): Verify response status code successfully
+
+2022-12-11 00:29:01 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-12-11 00:29:01 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("GET Booking By Id")): Send request successfully
+
+2022-12-11 00:29:02 - [MESSAGE][INFO] - HAR: C:\Users\Ganesh\Katalon Studio\BMC_Software_API Assignment\Reports\20221211_002845\BMC_API_Assignment - All Test Cases\20221211_002845\requests\main\6.har
+
+2022-12-11 00:29:02 - [MESSAGE][PASSED] - Send request successfully
+
+2022-12-11 00:29:02 - [TEST_STEP][PASSED] - result1 = slurper.parseText(response1.getResponseBodyContent()): null
+
+2022-12-11 00:29:02 - [TEST_STEP][PASSED] - firstName = firstname: null
+
+2022-12-11 00:29:02 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response1, successCode): Verify response status code successfully
+
+2022-12-11 00:29:02 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-12-11 00:29:02 - [TEST_STEP][PASSED] - verifyEqual(firstNameUpdated, firstName): Actual object 'Auto_151683916' and expected object 'Auto_151683916' are equal
+
+2022-12-11 00:29:02 - [MESSAGE][PASSED] - Actual object 'Auto_151683916' and expected object 'Auto_151683916' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/5. DELETE Booking" time="3.831" classname="Test Cases/5. DELETE Booking" status="PASSED">
+         <system-out><![CDATA[2022-12-11 00:29:02 - [TEST_CASE][PASSED] - Test Cases/5. DELETE Booking: Test Cases/5. DELETE Booking
+
+2022-12-11 00:29:03 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("CREATE Booking")): Send request successfully
+
+2022-12-11 00:29:04 - [MESSAGE][INFO] - HAR: C:\Users\Ganesh\Katalon Studio\BMC_Software_API Assignment\Reports\20221211_002845\BMC_API_Assignment - All Test Cases\20221211_002845\requests\main\7.har
+
+2022-12-11 00:29:04 - [MESSAGE][PASSED] - Send request successfully
+
+2022-12-11 00:29:04 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-12-11 00:29:04 - [TEST_STEP][PASSED] - result = slurper.parseText(response.getResponseText()): null
+
+2022-12-11 00:29:04 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, successCode): Verify response status code successfully
+
+2022-12-11 00:29:04 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-12-11 00:29:04 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("DELETE Booking")): Send request successfully
+
+2022-12-11 00:29:05 - [MESSAGE][INFO] - HAR: C:\Users\Ganesh\Katalon Studio\BMC_Software_API Assignment\Reports\20221211_002845\BMC_API_Assignment - All Test Cases\20221211_002845\requests\main\8.har
+
+2022-12-11 00:29:05 - [MESSAGE][PASSED] - Send request successfully
+
+2022-12-11 00:29:05 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response1, 201): Verify response status code successfully
+
+2022-12-11 00:29:05 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-12-11 00:29:05 - [TEST_STEP][PASSED] - response2 = sendRequest(findTestObject("GET Booking By Id")): Send request successfully
+
+2022-12-11 00:29:06 - [MESSAGE][INFO] - HAR: C:\Users\Ganesh\Katalon Studio\BMC_Software_API Assignment\Reports\20221211_002845\BMC_API_Assignment - All Test Cases\20221211_002845\requests\main\9.har
+
+2022-12-11 00:29:06 - [MESSAGE][PASSED] - Send request successfully
+
+2022-12-11 00:29:06 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response2, 404): Verify response status code successfully
+
+2022-12-11 00:29:06 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-12-11 00:28:48 - [TEST_SUITE][PASSED] - BMC_API_Assignment - All Test Cases: Test Cases/5. DELETE Booking]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

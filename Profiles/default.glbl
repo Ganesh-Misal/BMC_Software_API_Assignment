@@ -11,13 +11,8 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>11822</initValue>
+      <initValue>0</initValue>
       <name>bookingId</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>28823</initValue>
-      <name>bookingIdDelete</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
